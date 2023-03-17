@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <script defer src="index.js"></script>
+    <header>
+        <a href="#"><img src="./css/Assets/cross.svg" alt="cross"></a>
+        <a href="#" class="lang" data-localize="Restore">Restore</a>
+    </header>
+    <h1 class="lang" data-localize="Unlimited_Access">Unlimited Access to All Features</h1>
+    <div class="grid">
+        <img src="./css/Assets/unlimitedDocs.svg" alt="unlimitedDocs">
+        <p class="lang" data-localize="Unlimited_documents">Unlimited documents</p>
+        <img src="./css/Assets/export.svg" alt="export">
+        <p class="lang" data-localize="Count_mode">Export to clouds</p>
+        <img src="./css/Assets/noAds.svg" alt="noAds">
+        <p class="lang" data-localize="Text_recognition_OCR">Text recognition (OCR)</p>
+    </div>
+    <div class="options">
+        <div class="active left">
+            <p><b class="lang" data-localize="Monthly">Monthly</b></p>
+            <p class="lang" data-localize="price_per_month"><b>$9.99</b><br> </p>
+            <p class="frame"><b class="lang" data-localize="DAYS_FREE">3 DAYS FREE!</b></p>
+            <p class="lang" data-localize="price_month">$9.99</p>
+        </div>
+        <div class="right">
+            <span class="discount lang" data-localize="discount">-83%</span>
+            <p><b class="lang" data-localize="Annually">Annually</b></p>
+            <p class="lang" data-localize="price_per_year"><b>$19.99</b><br> </p>
+            <p class="frame"><b class="lang" data-localize="MOST_POPULAR">MOST POPULAR</b></p>
+            <p class="lang" data-localize="price_month">$1.66</p>
+        </div>
+    </div>
+    <button class="lang" data-localize="Continue">Continue</button>
+    <p class="lang" data-localize="Auto-renewable">Auto-rewable. Cancel anytime</p>
+    <footer>
+        <a href="#" class="lang" data-localize="Terms_of_Use">Terms of Use</a>
+        <a href="#" class="lang" data-localize="Privacy_Policy">Privacy Policy</a>
+    </footer>
+    <script src="js/lang.js"></script>
+    <script src="js/localize.js"></script>
+    <script defer src="js/index.js"></script>
 </body>
 </html>

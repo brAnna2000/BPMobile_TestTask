@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SF\ Pro\ Display/SFPRODISPLAYREGULAR.OTF');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SF\ Pro\ Text/SFProText-Light.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+:root{
+    --white: rgba(255, 255, 255, 1);
+    --smoke: rgba(255, 255, 255, 0.6);
+    --smoke-p: rgba(255, 255, 255, 0.5);
+    --smoke-links: rgba(189, 192, 208, 1);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --red: #DB0000;
+    --cornflower: rgba(73, 87, 149, 1);
+}
+body{
+    background: url("../css/Assets/4.png");
+    background-size: cover;
+    padding: 44px 20px 38px 24px;
+    color: var(--white);
+    font-family: "SF Pro Display";
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "SF Pro Text";
+}
+header a:last-of-type{
+    font-size: 13px;
+    color: var(--smoke);
+    text-decoration: none;
+}
+h1{
+    margin: 157px 20px 29px 20px;
+    text-align: center;
+    text-shadow: 0px 2px 4px var(--shadow);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 23px 170px;
+    row-gap: 7px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF Pro Text";
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 44px 0 16px 0;
+}
+.options > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    opacity: 0.25;
+    height: 162px;
+    width: 131px;
+}
+.options > div:first-of-type{
+    background: url("./Assets/shape-1.svg");
+    background-size: cover;
+}
+.options > div.active{
+    height: 178px;
+    width: 144px;
+    opacity: 1;
+}
+.active p:first-of-type{
+    font-size: 18.7px;
+    line-height: 22px;
+}
+.options > div:last-of-type{
+    position: relative;
+    background: url("./Assets/shape-2.svg");
+    background-size: cover;
+}
+.discount{
+    position: absolute;
+    background: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    font-size: 10px;
+    line-height: 12px;
+}
+.active .discount{
+    height: 38px;
+    width: 38px;
+    border-radius: 19.2px;
+    top: -3px;
+    right: -3px;
+}
+.frame{ 
+    width: 104%;
+    background-color: var(--cornflower);
+    font-size: 15.4px;
+    line-height: 18px;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    height: 54px;
+    width: 280px;
+    background: linear-gradient(270deg, #1987FF 0%, #19CCFF 100%);
+    border-radius: 30px;
+    border-color: transparent;
+    font-size: 17px;
+    line-height: 17px;
+    color: var(--white);
+    font-family: 'SF Pro Display';
+}
+button + p{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--smoke-p);
+    margin: 16px 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--smoke-links);
+    font-size: 11px;
+    line-height: 13px;
+}
